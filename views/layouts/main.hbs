@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin:0;
+            padding:0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .grid {
+            display: grid;
+            width: 100%;
+            height: 100vh;
+            place-items: center;
+        }
+        .flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        ul{
+            list-style-type: none;
+            width: 30%;
+        }
+        .container {
+            padding: 0 4rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar flex container">
+        <h1>Handlebars</h1>
+        <ul class="flex">
+            <li class="li"><a href="/">Home</a></li>
+            <li class="li"><a href="/about">About</a></li>
+            <li class="li"><a href="/contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="grid">
+        <h1>{{{title}}}</h1>
+        <p>{{{body}}}</p>   
+    </div>
+</body>
+</html>
